@@ -14,7 +14,7 @@ function App() {
       <div className="main">
         <div className="app">
           <div className="header">
-            <img className="logo" src="src/assets/logo.png" alt="" draggable="false"/>
+            <img className="logo" src="logo.png" alt="" draggable="false"/>
             <h1 className="username">@Zmito26</h1>
           </div>
           <div className="big-links">
