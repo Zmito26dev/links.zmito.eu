@@ -64,7 +64,7 @@ body {
 }
 
 .big-links {
-  width: calc(100% - 40px);
+  width: calc(100% - 30px);
   margin: 60px 0px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -124,11 +124,19 @@ body {
 }
 
 .icon-link {
+  margin: 0px 10px 0px 10px;
   width: 40px;
   height: 40px;
+  transition: 0.2s;
 }
 
-.icon-link svg {
+.icon-link svg, g, path {
   width: 40px;
   height: 40px;
+  transition: 0.5s;
+  fill: #D0FF00;
+}
+
+.icon-link:hover {
+  transform: scale(1.15);
 }

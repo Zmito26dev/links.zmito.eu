@@ -1,11 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { twitchIcon, ytIcon, igIcon, xIcon, tiktokIcon } from './assets/svgs'
+// const apiKey = import.meta.env.VITE_CLIENT_ID;
 
 function App() {
+  const [twitchLive, setTwitchLive] = useState(false)
+
   const WidthLink = ({name, url, icon}) => {
     return (
-      <a className="width-link" href={url} draggable="false">
+      <a className="width-link" href={url} target="_black" draggable="false">
         <p>{name}</p>
+      </a>
+    )
+  }
+
+  const IconLink = ({url, icon}) => {
+    return (
+      <a className="icon-link" href={url} target="_black" draggable="false">
+        {icon}
       </a>
     )
   }
@@ -27,11 +38,11 @@ function App() {
           </div>
           <div className="footer">
             <div className="footer-links">
-              <a className="icon-link" href="">{twitchIcon}</a>
-              <a className="icon-link" href="">{ytIcon}</a>
-              <a className="icon-link" href="">{igIcon}</a>
-              <a className="icon-link" href="">{xIcon}</a>
-              <a className="icon-link" href="">{tiktokIcon}</a>
+              <IconLink icon={twitchIcon} url="https://twitch.tv/zmito26"/>
+              <IconLink icon={ytIcon} url="https://www.youtube.com/@zmito26_"/>
+              <IconLink icon={igIcon} url="https://www.instagram.com/zmito26"/>
+              <IconLink icon={xIcon} url="https://x.com/zmito26"/>
+              <IconLink icon={tiktokIcon} url="https://tiktok.com/@zmito26"/>
             </div>
           </div>
         </div> 
