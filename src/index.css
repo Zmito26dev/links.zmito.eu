@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  background-color: #242424;
+  background-image: radial-gradient(at 7.913000756945365% 51.977190564211575%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 1) 0%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 0) 100%), radial-gradient(at 44.42869579202817% 30.464398785015234%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 1) 0%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 0) 100%), radial-gradient(at 31.595922970169998% 74.67937624113377%, hsla(328.88888888888886, 40.90909090909091%, 25.882352941176467%, 1) 0%, hsla(328.88888888888886, 40.90909090909091%, 25.882352941176467%, 0) 100%), radial-gradient(at 60.551500504052% 27.63340651026396%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 1) 0%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 0) 100%), radial-gradient(at 85.06620322909475% 44.768790250346704%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 1) 0%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 0) 100%), radial-gradient(at 56.137879808016876% 96.90142581514898%, hsla(328.88888888888886, 40.90909090909091%, 25.882352941176467%, 1) 0%, hsla(328.88888888888886, 40.90909090909091%, 25.882352941176467%, 0) 100%), radial-gradient(at 9.772075057502017% 40.842411297038026%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 1) 0%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 0) 100%), radial-gradient(at 62.37114851425702% 34.525045014342545%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 1) 0%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 0) 100%), radial-gradient(at 84.77776585253183% 19.47682439892684%, hsla(328.88888888888886, 40.90909090909091%, 25.882352941176467%, 1) 0%, hsla(328.88888888888886, 40.90909090909091%, 25.882352941176467%, 0) 100%), radial-gradient(at 68.5878230548258% 66.29519491703391%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 1) 0%, hsla(219.42857142857142, 40.229885057471265%, 17.058823529411764%, 0) 100%), radial-gradient(at 9.660554122692599% 96.79339791771295%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 1) 0%, hsla(206.8965517241379, 93.54838709677419%, 6.078431372549019%, 0) 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+
 #root {
   width: 100%;
   height: 100%;
@@ -9,10 +18,6 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: #242424;
-  background-image: url("banner.png");
-  background-size: cover;
-  background-position: center center;
   font-family: "Poppins", system-ui;
   font-weight: 500;
   font-style: normal;
@@ -23,7 +28,6 @@ body {
 .main {
   width: 100%;
   height: 100%;
-  background-color: #24242490;
   display: flex;
   justify-content: center;
   color: white;
@@ -32,6 +36,9 @@ body {
 .app {
   width: 500px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -43,8 +50,8 @@ body {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 }
 
@@ -52,11 +59,12 @@ body {
   font-family: "Chakra Petch", system-ui;
   font-weight: 700;
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
   margin: 15px 0px 0px 0px;
 }
 
 .big-links {
+  width: calc(100% - 40px);
   margin: 60px 0px 0px 0px;
   display: flex;
   flex-direction: column;
@@ -97,4 +105,30 @@ body {
   color: #D0FF00;
   font-size: 16px;
   transition: 0.2s;
+}
+
+.footer {
+  width: 100%;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.footer-links {
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-link {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-link svg {
+  width: 40px;
+  height: 40px;
 }

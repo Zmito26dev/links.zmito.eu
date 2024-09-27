@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { twitchIcon, ytIcon, igIcon, xIcon, tiktokIcon } from './assets/svgs'
 
 function App() {
   const WidthLink = ({name, url, icon}) => {
@@ -22,7 +23,16 @@ function App() {
             <WidthLink name="Youtube" url="https://www.youtube.com/@zmito26_"/>
             <WidthLink name="Instagram" url="https://www.instagram.com/zmito26"/>
             <WidthLink name="Twitter [X]" url="https://x.com/zmito26"/>
-            <WidthLink name="Tiktok" url="https://tiktok.com/zmito26"/>
+            <WidthLink name="Tiktok" url="https://tiktok.com/@zmito26"/>
+          </div>
+          <div className="footer">
+            <div className="footer-links">
+              <a className="icon-link" href="">{twitchIcon}</a>
+              <a className="icon-link" href="">{ytIcon}</a>
+              <a className="icon-link" href="">{igIcon}</a>
+              <a className="icon-link" href="">{xIcon}</a>
+              <a className="icon-link" href="">{tiktokIcon}</a>
+            </div>
           </div>
         </div> 
       </div>
