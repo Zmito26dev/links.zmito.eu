@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { twitchIcon, ytIcon, igIcon, xIcon, tiktokIcon } from './assets/svgs'
+import VctWidget from './components/vct-widget'
 // const apiKey = import.meta.env.VITE_CLIENT_ID;
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <h1 className="username">@Zmito26</h1>
           </div>
           <div className="big-links">
+            <VctWidget />
             <WidthLink name="Twitch" url="https://twitch.tv/zmito26"/>
             <WidthLink name="Youtube" url="https://www.youtube.com/@zmito26_"/>
             <WidthLink name="Instagram" url="https://www.instagram.com/zmito26"/>

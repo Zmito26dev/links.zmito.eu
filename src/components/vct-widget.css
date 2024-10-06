@@ -1,0 +1,50 @@
+.vct-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+  height: 100px;
+  border-radius: 12px;
+  background-color: #c5b075;
+  color: white;
+  text-decoration: none;
+  outline: 2px solid transparent;
+  outline-offset: 0px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.vct-widget-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  text-decoration: none;
+  color: white;
+}
+
+.vct-widget:hover {
+  outline: 2px solid #c5b075;
+  outline-offset: 4px;
+}
+
+.vct-widget:hover .vct-widget-link {
+  transform: scale(1.05);
+}
+
+.vct-widget-link p {
+  margin: 0 0 0 10px;
+  font-family: "Poppins", system-ui;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.vct-widget-link svg {
+  height: 50px;
+}
+
+.vct-widget-link svg path {
+  fill: white;
+}
