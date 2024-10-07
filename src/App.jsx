@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { twitchIcon, ytIcon, igIcon, xIcon, tiktokIcon } from './assets/svgs'
-import VctWidget from './components/vct-widget'
+import { twitchIcon, ytIcon, igIcon, xIcon, tiktokIcon, zmitoLogo } from './assets/svgs'
+import VctWidget from './components/vct-widget/vct-widget'
 // const apiKey = import.meta.env.VITE_CLIENT_ID;
 
 function App() {
@@ -46,6 +46,10 @@ function App() {
               <IconLink icon={xIcon} url="https://x.com/zmito26"/>
               <IconLink icon={tiktokIcon} url="https://tiktok.com/@zmito26"/>
             </div>
+            <a className="info" href="https://links.zmito.eu" target="_blank">
+              <p className="info-text">Created by </p>
+              {zmitoLogo}
+            </a>
           </div>
         </div> 
       </div>

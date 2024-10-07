@@ -35,10 +35,12 @@
 
 .vct-widget-link p {
   margin: 0 0 0 10px;
+  width: 150px;
   font-family: "Poppins", system-ui;
   font-weight: 600;
   font-style: normal;
   font-size: 24px;
+  line-height: 24px;
 }
 
 .vct-widget-link svg {
