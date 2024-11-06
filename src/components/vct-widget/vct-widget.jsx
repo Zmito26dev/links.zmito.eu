@@ -4,11 +4,11 @@ const vctIcon = <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 378.56"
 
 export default function VctWidget() {
   return (
-    <div className="vct-widget">
-      <a className="vct-widget-link" href="https://vctwidget.zmito.eu" target="_black" draggable="false">
+    <a className="vct-widget" href="https://vctwidget.zmito.eu" target="_black" draggable="false">
+      <div className="vct-widget-link">
         {vctIcon}
         <p>VCT WIDGET GENERATOR</p>
-      </a>
-    </div>
+      </div>
+    </a>
   )
 }
