@@ -16,7 +16,7 @@ const olIcon = <svg height="50" viewBox="0 0 848 300" fill="none" xmlns="http://
 
 export default function ONELauncherWidget() {
   return (
-    <a className="ol-widget" href="https://onelauncher.zmito.eu" target="_black" draggable="false">
+    <a className="ol-widget" href="https://onelauncher.zmito.eu" target="_blank" draggable="false">
       <div className="ol-widget-link">
         {olIcon}
       </div>
