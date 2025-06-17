@@ -50,8 +50,8 @@ function App() {
           </div>
           <div className="big-links">
             <h2>PERSONAL PROJECTS</h2>
-            <ModpkgWidget />
             <ONELauncherWidget />
+            <ModpkgWidget />
             <VctWidget />
             <h2>SOCIAL MEDIA LINKS</h2>
             <WidthLink name="Twitch" url="https://twitch.tv/zmito26"/>
@@ -61,7 +61,7 @@ function App() {
             {/* <WidthLink name="Tiktok" url="https://tiktok.com/@zmito26"/> */}
             <h2>CONTACT ME</h2>
             <WidthCopyLink name="Personal email" url="mailto:zmito@zmito.eu" textToCopy="zmito@zmito.eu"/>
-            <WidthCopyLink name="Dev email" url="mailto:zmito26dev@gmail.com" textToCopy="zmito26dev@gmail.com"/>
+            <WidthCopyLink name="Dev email" url="mailto:zmitodev@zmito.eu" textToCopy="zmitodev@zmito.eu"/>
           </div>
           <div className="footer">
             <div className="footer-links">
@@ -69,7 +69,7 @@ function App() {
               <IconLink icon={svg.yt} url="https://www.youtube.com/@zmito26_"/>
               <IconLink icon={svg.ig} url="https://www.instagram.com/zmito26"/>
               <IconLink icon={svg.x} url="https://x.com/zmito26"/>
-              {/* <IconLink icon={tiktokIcon} url="https://tiktok.com/@zmito26"/> */}
+              {/* <IconLink icon={svg.tiktok} url="https://tiktok.com/@zmito26"/> */}
             </div>
             <a className="info" href="https://links.zmito.eu" target="_blank">
               <p className="info-text">Created by </p>
